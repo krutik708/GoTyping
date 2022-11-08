@@ -2,7 +2,8 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1140px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +21,7 @@ body{
     display: flex;
     background: #ffffff;
     box-shadow: 0 0 5px #999999;
+    margin-top: 178px;
 }
 
 .login .col-left,
