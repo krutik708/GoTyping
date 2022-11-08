@@ -8,7 +8,9 @@
     justify-content: center;
     flex-direction: column;
 }
-
+body{
+    background-image: url(../images/homeBannerOriginal.jpg);
+}
 .container {
     position: relative;
     width: 100%;
