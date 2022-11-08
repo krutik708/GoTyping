@@ -114,6 +114,21 @@
     }
 }
 
+.btn-login{
+    width: 80px;
+    height: 40px;
+    background-color: #7702cd; 
+    color: #fff;
+    border:#7702cd;
+    border-radius: 5px;
+}
+.btn-login:hover{
+    background-color: #a200ff; 
+    color: #fff;
+    border:#7702cd;
+    
+}
+
 /* For responsiveness */
 @media (max-width: 780px)
 {
