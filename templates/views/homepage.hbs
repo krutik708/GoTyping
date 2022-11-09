@@ -67,13 +67,70 @@
         </p>
 
         <div class="buttonContainer">
-            <a href="/login" class="custom-btn btn-11"> Practice </a>
+            {{!-- <a href="/login" class="custom-btn btn-11"> Practice </a> --}}
+            {{!-- <button class="custom-btn btn-11" onclick="startTheGame();" id="startGameButton" style="display: grid;"> 
+                Practice
+            </button> --}}
+            <a href="/practice" class="custom-btn btn-11"> Practice </a>
             <a href="/register" class="custom-btn btn-11"> Play with Friends </a>
             
         </div>
     </div>
 
-   
+    <!-- Message popUpControl and popup -->
+    <div class="togglePopUp">
+        <input type="checkbox" checked id="popUpControl" />
+    </div>
+    <div class="messagePopUp"></div>
+    
+    <!-- It is used to display the countdown before the game starts.  -->
+    <div class="countDownContainer">
+        <h1 class="countDown">Here Comes the Countdown</h1>
+    </div>
+    
+    <!-- It is the container in which we will be typing -->
+    <div class="mainContainer">
+        <div class="svg" id="svg"></div>
+    
+        <div class="sentence"></div>
+    
+        <div class="myTyping">
+            <textarea id="myTyping" rows="1" placeholder="Start Typing..."></textarea>
+        </div>
+    
+        <div class="counterContainer">
+            <div class="wrongCounter"></div>
+        </div>
+    
+        <div class="endDisplay"></div>
+    </div>
+    
+    <!-- Graph Container -->
+    <div class="graphContainer">
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    
+    
+    <!-- To optimize we have to keep some script at last -->
+    <!-- * 2 : Chart js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+        integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+        crossorigin="anonymous"></script>
+    
+    <!-- * 3 : Littie animation link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"
+        integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- 4 : TextGeneration -->
+    <script src="js/textGenerationScript.js"></script>
+    <!-- 5 : graphGeneration :  -->
+    <script src="js/graphGeneratorScript.js"></script>
+    
+    <!-- 8 : confettie effect -->
+    <script src="js/finishAnimation.js"></script>
+    <!-- the css of this confettie is in the mainContainerStyle -->
     
 
     

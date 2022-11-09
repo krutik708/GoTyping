@@ -38,6 +38,10 @@ app.get("/index",(req,res)=>{
     res.render("index");
 })
 
+app.get("/practice",(req,res)=>{
+    res.render("practice");
+})
+
 app.get("/register",(req,res)=>{
     res.render("register");
 })
@@ -276,7 +280,7 @@ io.on("connection", (socket) => {
       }
     }
   });
-
+ 
   // * 3.3 GameEnded :
   socket.on("gameStarted", (playerName, roomName, sentenceText) => {
     if (playerName == rooms[roomName].host) {
